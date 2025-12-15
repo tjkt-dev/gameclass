@@ -3,171 +3,439 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Kelas</title>
+  <title>Pengenalan Kelas</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
     }
 
-    body {
-      background: #f4f6f8;
-      color: #333;
+    body{
+      background:#f1f5f9;
+      color:#1e293b;
     }
 
-    /* Navbar */
-    .navbar {
-      background: #1e293b;
-      color: white;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    /* ===== NAVBAR ===== */
+    .navbar{
+      background:#1e293b;
+      color:white;
+      padding:15px 30px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
     }
 
-    .navbar a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
+    .navbar a{
+      color:white;
+      margin-left:20px;
+      text-decoration:none;
+      font-weight:bold;
     }
 
-    .navbar a:hover {
-      text-decoration: underline;
+    /* ===== HEADER ===== */
+    .header{
+      background:#2563eb;
+      color:white;
+      padding:40px 20px;
+      text-align:center;
     }
 
-    /* Header */
-    .header {
-      background: #2563eb;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+    .header h2{
+      font-size:2.2em;
+      margin-bottom:10px;
     }
 
-    .header h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
+    /* ===== SECTION ===== */
+    .section{
+      padding:40px 30px;
+      max-width:1200px;
+      margin:auto;
     }
 
-    /* Section */
-    .container {
-      padding: 40px 30px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+    .section h3{
+      margin-bottom:20px;
+      color:#1e40af;
+      text-align:center;
     }
 
-    .box {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    /* ===== WALI KELAS ===== */
+    .wali{
+      display:flex;
+      justify-content:center;
+      margin-bottom:50px;
     }
 
-    .box h3 {
-      margin-bottom: 15px;
-      color: #1e40af;
+    .card-wali{
+      background:white;
+      padding:20px;
+      border-radius:14px;
+      text-align:center;
+      width:260px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
     }
 
-    .box ul {
-      list-style: none;
+    .card-wali img{
+      width:140px;
+      height:140px;
+      object-fit:cover;
+      border-radius:50%;
+      margin-bottom:15px;
     }
 
-    .box ul li {
-      margin-bottom: 10px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #ddd;
+    /* ===== GRID SISWA ===== */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+      gap:20px;
     }
 
-    .status {
-      font-size: 0.9em;
-      color: #16a34a;
-      font-weight: bold;
+    .card{
+      background:white;
+      padding:15px;
+      border-radius:14px;
+      text-align:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
     }
 
-    .deadline {
-      font-size: 0.9em;
-      color: #dc2626;
+    .card img{
+      width:120px;
+      height:120px;
+      object-fit:cover;
+      border-radius:50%;
+      margin-bottom:10px;
     }
 
-    /* Footer */
-    footer {
-      background: #1e293b;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
+    .card h4{
+      margin-bottom:5px;
+      font-size:1em;
+    }
+
+    .card p{
+      font-size:0.85em;
+      color:#475569;
+    }
+
+    /* ===== FOOTER ===== */
+    footer{
+      background:#1e293b;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:40px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <h1>📚 Web Kelas</h1>
-    <nav>
-      <a href="index.html">Beranda</a>
-      <a href="kelas.html">Kelas</a>
-      <a href="hame.html">Game</a>
-      <a href="tentang.html">Tentang</a>
-    </nav>
-  </header>
+<!-- NAVBAR -->
+<header class="navbar">
+  <h1>👨‍🎓 Kelas XI</h1>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="kelas.html">Kelas</a>
+    <a href="game.html">Game</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
 
-  <!-- Header -->
-  <section class="header">
-    <h2>Kelas XI</h2>
-    <p>Materi, tugas, dan pengumuman</p>
-  </section>
+<!-- HEADER -->
+<section class="header">
+  <h2>Pengenalan Kelas XI</h2>
+  <p>Jumlah siswa: <b>36 Orang</b></p>
+</section>
 
-  <!-- Content -->
-  <section class="container">
+<!-- WALI KELAS -->
+<section class="section">
+  <h3>👩‍🏫 Wali Kelas</h3>
+  <div class="wali">
+    <div class="card-wali">
+      <img src="gambar/fotoku.webp" alt="Wali Kelas">
+      <h4>Nama Wali Kelas</h4>
+      <p>NIP: 123456789</p>
+      <p>Mata Pelajaran: ——</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Materi -->
-    <div class="box">
-      <h3>📚 Materi</h3>
-      <ul>
-        <li>HTML Dasar</li>
-        <li>CSS Dasar</li>
-        <li>JavaScript Dasar</li>
-        <li>Project Game Sederhana</li>
-      </ul>
+<!-- SISWA -->
+<section class="section">
+  <h3>👥 Anggota Kelas</h3>
+
+  <div class="grid">
+    <!-- CONTOH SISWA -->
+    <div class="card">
+      <img src="anggota/ALMAZELA.jpg">
+      <h4>ALAMAK</h4>
+      <p>No Absen: 1</p>
+      <p>Kelas: XII</p>
     </div>
 
-    <!-- Tugas -->
-    <div class="box">
-      <h3>📝 Tugas</h3>
-      <ul>
-        <li>
-          Buat halaman HTML sederhana  
-          <div class="deadline">Deadline: 20 Juni 2025</div>
-        </li>
-        <li>
-          Game Snake versi sederhana  
-          <div class="deadline">Deadline: 27 Juni 2025</div>
-        </li>
-      </ul>
+    <div class="card">
+      <img src="anggota/ANKY.jpg">
+      <h4>FUNGKY</h4>
+      <p>No Absen: 2</p>
+      <p>Kelas: XII</p>
     </div>
 
-    <!-- Pengumuman -->
-    <div class="box">
-      <h3>📢 Pengumuman</h3>
-      <ul>
-        <li>Ujian praktik minggu depan</li>
-        <li>Project dikerjakan individu</li>
-        <li class="status">Website ini sudah online 🎉</li>
-      </ul>
+    <div class="card">
+      <img src="anggota/ANNISA.jpg">
+      <h4>USTADZ ANNISA</h4>
+      <p>No Absen: 3</p>
+      <p>Kelas: XII</p>
     </div>
 
-  </section>
+    <div class="card">
+      <img src="anggota/AULIA.jpg">
+      <h4>RAUL BADMINTON</h4>
+      <p>No Absen: 4</p>
+      <p>Kelas: XII</p>
+    </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Web Kelas</p>
-  </footer>
+    <div class="card">
+      <img src="anggota/CEPI.jpg">
+      <h4>CEPAI IMO BOT</h4>
+      <p>No Absen: 5</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/FAJAR.jpg">
+      <h4>FAJAR SEDBOY</h4>
+      <p>No Absen: 6</p>
+      <p>Kelas: XII</p>
+    </div>
+
+
+    <div class="card">
+      <img src="anggota/FARHAN.jpg">
+      <h4>FARHAN MENGALIR</h4>
+      <p>No Absen: 7</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/FIRGINIA.jpg">
+      <h4>FIR'AUN</h4>
+      <p>No Absen: 8</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/GILANG.jpg">
+      <h4>GILANG PRAMUKA</h4>
+      <p>No Absen: 9</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/GITA.jpg">
+      <h4>GITAK GITEK</h4>
+      <p>No Absen: 10</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/INDRI.jpg">
+      <h4>INDRI JAKSEL</h4>
+      <p>No Absen: 11</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/ISMA.jpg">
+      <h4>IMAS MARIMAS</h4>
+      <p>No Absen: 12</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/KIRANA.jpg">
+      <h4>KARINA MINECRAFT</h4>
+      <p>No Absen: 13</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/LATIEF.jpg">
+      <h4>UCUP LATIEF</h4>
+      <p>No Absen: 14</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/LISNA.jpg">
+      <h4>LISNA ASTUL</h4>
+      <p>No Absen: 15</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/M PARID.jpg">
+      <h4>MARUP MIE AYAM</h4>
+      <p>No Absen: 16</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/M SYAUQI.jpg">
+      <h4>OQY JELLY DRINK</h4>
+      <p>No Absen: 17</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/M JAES.jpg">
+      <h4>LOCO JAWA</h4>
+      <p>No Absen: 18</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/NABILA.jpg">
+      <h4>NABILA KHALIFAH</h4>
+      <p>No Absen: 19</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/NAZWA.jpg">
+      <h4>NAZWA SHIHAB KW</h4>
+      <p>No Absen: 20</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/NENG INAYATUL.jpg">
+      <h4>NENG 'RIZKY'</h4>
+      <p>No Absen: 21</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/NIDIA.jpg">
+      <h4>WATIII AHMET</h4>
+      <p>No Absen: 22</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/NOVIA.jpg">
+      <h4>NOKIA</h4>
+      <p>No Absen: 23</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/NURUL K.jpg">
+      <h4>NURUL HIDAYAH BIDUAN TKJ 1</h4>
+      <p>No Absen: 24</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/RASTI.jpg">
+      <h4>RASTI RACING</h4>
+      <p>No Absen: 25</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/RIZKY.jpg">
+      <h4>EL BOKEP DAN TAROT</h4>
+      <p>No Absen: 26</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/SAHIRA.jpg">
+      <h4>LUNOX BOTTTT</h4>
+      <p>No Absen: 27</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/SASKIA.jpg">
+      <h4>SISKA GITEK</h4>
+      <p>No Absen: 28</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/SENDI.jpg">
+      <h4>SATRIO MAHATIR</h4>
+      <p>No Absen: 29</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/SILMI.jpg">
+      <h4>MIMI POLI</h4>
+      <p>No Absen: 30</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/SITI N.jpg">
+      <h4>SITI BADRIAH KW</h4>
+      <p>No Absen: 31</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/SOFWAN.jpg">
+      <h4>EL WIFI CRYPTO TAPTAP</h4>
+      <p>No Absen: 32</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/WILDAN.jpg">
+      <h4>WIRMAN</h4>
+      <p>No Absen: 33</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/YULIANA.jpg">
+      <h4>KADITA NO SKIN</h4>
+      <p>No Absen: 34</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/ZAIRA.jpg">
+      <h4>ZAIRA INDIA AFRIKA</h4>
+      <p>No Absen: 35</p>
+      <p>Kelas: XII</p>
+    </div>
+
+    <div class="card">
+      <img src="anggota/ZIA.jpg">
+      <h4>ZIA EL TUNDUH</h4>
+      <p>No Absen: 36</p>
+      <p>Kelas: XII</p>
+    </div>
+
+   
+
+
+
+
+
+
+    
+
+    <!-- DUPLIKASI CARD INI SAMPAI 36 SISWA -->
+  </div>
+</section>
+
+<footer>
+  © 2025 Web Kelas • Kebersamaan & Prestasi ✨
+</footer>
 
 </body>
 </html>
