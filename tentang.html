@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tentang Kita</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  margin:0;
+  background:#0f172a;
+  color:white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+  width:100%;
+  background:#1e293b;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:bold;
+}
+
+/* ===== CONTENT ===== */
+.container{
+  max-width:900px;
+  margin:30px auto;
+  padding:20px;
+}
+
+.card{
+  background:#020617;
+  padding:25px;
+  border-radius:16px;
+  margin-bottom:25px;
+}
+
+.card h2{
+  margin-top:0;
+  color:#38bdf8;
+}
+
+/* ===== PROFILE ===== */
+.profile{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.photo{
+  width:150px;
+  height:150px;
+  background:#1e293b;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#94a3b8;
+  font-size:14px;
+  border:3px solid #38bdf8;
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.profile-info{
+  flex:1;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  text-align:center;
+  padding:15px;
+  background:#020617;
+  font-size:14px;
+  color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h3>🌐 Web Kelas & Game</h3>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="game.html">Game</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</div>
+
+<div class="container">
+
+  <!-- INFO WEBSITE -->
+  <div class="card">
+    <h2>📘 Tentang Website</h2>
+    <p>
+      Website ini dibuat sebagai <b>media pembelajaran dan hiburan</b>.
+      Di dalamnya terdapat halaman kelas, materi, serta berbagai game sederhana
+      yang bertujuan untuk melatih <b>logika, refleks, dan kemampuan berpikir cepat</b>.
+    </p>
+    <p>
+      Website ini dirancang agar ringan, mudah diakses melalui
+      <b>HP maupun laptop</b>, serta nyaman digunakan oleh pelajar.
+    </p>
+  </div>
+
+  <!-- PEMBUATAN WEBSITE -->
+  <div class="card">
+    <h2>🛠️ Pembuatan Website</h2>
+    <p>
+      Website ini dikembangkan menggunakan teknologi web dasar:
+    </p>
+    <ul>
+      <li>HTML – struktur halaman</li>
+      <li>CSS – tampilan dan desain</li>
+      <li>JavaScript – logika dan interaksi game</li>
+    </ul>
+    <p>
+      Semua game dibuat <b>tanpa framework berat</b> agar tetap cepat dan mudah dipelajari.
+      Website ini juga cocok sebagai contoh proyek pembelajaran teknologi digital.
+    </p>
+  </div>
+
+  <!-- PROFIL -->
+  <div class="card">
+    <h2>👤 Tentang Pembuat</h2>
+    <div class="profile">
+      <div class="photo">
+        <img src="gambar/fotoku.jpg"alt="foto saya">
+     </div>
+      <div class="profile-info">
+        <p>
+          Website ini dibuat oleh seorang pelajar yang tertarik pada
+          <b>teknologi, pendidikan, dan pengembangan game sederhana</b>.
+        </p>
+        <p>
+          Tujuan pembuatan website ini adalah untuk menggabungkan
+          <b>belajar dan bermain</b> dalam satu platform yang menyenangkan.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2025 Web Kelas & Game • Dibuat dengan semangat belajar 🚀
+</div>
+
+</body>
+</html>

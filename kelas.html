@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Kelas</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #1e293b;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header {
+      background: #2563eb;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .header h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    /* Section */
+    .container {
+      padding: 40px 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .box h3 {
+      margin-bottom: 15px;
+      color: #1e40af;
+    }
+
+    .box ul {
+      list-style: none;
+    }
+
+    .box ul li {
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .status {
+      font-size: 0.9em;
+      color: #16a34a;
+      font-weight: bold;
+    }
+
+    .deadline {
+      font-size: 0.9em;
+      color: #dc2626;
+    }
+
+    /* Footer */
+    footer {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>📚 Web Kelas</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="kelas.html">Kelas</a>
+      <a href="hame.html">Game</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
+
+  <!-- Header -->
+  <section class="header">
+    <h2>Kelas XI</h2>
+    <p>Materi, tugas, dan pengumuman</p>
+  </section>
+
+  <!-- Content -->
+  <section class="container">
+
+    <!-- Materi -->
+    <div class="box">
+      <h3>📚 Materi</h3>
+      <ul>
+        <li>HTML Dasar</li>
+        <li>CSS Dasar</li>
+        <li>JavaScript Dasar</li>
+        <li>Project Game Sederhana</li>
+      </ul>
+    </div>
+
+    <!-- Tugas -->
+    <div class="box">
+      <h3>📝 Tugas</h3>
+      <ul>
+        <li>
+          Buat halaman HTML sederhana  
+          <div class="deadline">Deadline: 20 Juni 2025</div>
+        </li>
+        <li>
+          Game Snake versi sederhana  
+          <div class="deadline">Deadline: 27 Juni 2025</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Pengumuman -->
+    <div class="box">
+      <h3>📢 Pengumuman</h3>
+      <ul>
+        <li>Ujian praktik minggu depan</li>
+        <li>Project dikerjakan individu</li>
+        <li class="status">Website ini sudah online 🎉</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Web Kelas</p>
+  </footer>
+
+</body>
+</html>

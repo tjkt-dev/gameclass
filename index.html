@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BERANDA</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+             background:#1b3e8a ;
+             color: #333;
+        }
+
+        /* Navbar */
+        .navbar{
+            background:#1e293b;
+            color:#ffffff;
+            padding:15px 30px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .navbar a {
+            color: #fff;
+            margin: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #2563eb ,1e40af);
+            color:white;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .hero-btn .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 5px;
+            background: white;
+            color: #1e40af;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .hero-btn .btn-secondary {
+            background: #e5e7eb;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+            gap: 20px;
+            padding: 50px 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgb(0,0,0.0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: 1e293b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!--Navbar-->
+<header class="navbar">
+    <h1> Web kelas</h1>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="kelas.html">Kelas</a>
+        <a href="hame.html">Game</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="galeri.html">Galeri</a>
+    </nav>
+</header>
+
+<!--Hero-->
+<section class="hero"> 
+    <h2>Selamat Datang</h2>
+    <p> Website ini digunakan sebagai <b>web kelas</b> dan <b>game sederhana</b></p>
+    <div class="hero-btn">
+        <a href="kelas.html" class="btn">Masuk kelas</a>
+        <a href="hame.html" class="btn btn-secondary">Main Game</a>
+        <a href="galeri.html" class="btn btn-secondary">Galeri</a>
+    </div>
+</section>
+
+<!--Features-->
+<section class="features">
+    <div class="card">
+        <h3>Web Kelas</h3>
+        <p> Materi,tugas, dan pengumuman kelas.</p>
+    </div>
+    <div class="card">
+        <h3>Online</h3>
+        <p> Bisa diakses kapan saja dan di mana saja.</p>
+    </div>
+    <div class="card">
+        <h3>Game</h3>
+        <P> Raih score sebanyak yang kamu bisa</P>
+    </div>
+</section>
+
+<!--Footer-->
+<footer>
+    <p> <p>&#169;</p> 2025 web kelas dan game</p>
+</footer>
+
+</body>
+</html>

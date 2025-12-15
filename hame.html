@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Game</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #1e293b;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header {
+      background: #2563eb;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .header h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    /* Game List */
+    .games {
+      padding: 50px 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .game-card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .game-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .game-card p {
+      margin-bottom: 18px;
+      font-size: 0.95em;
+    }
+
+    .game-card a {
+      display: inline-block;
+      padding: 10px 22px;
+      background: #16a34a;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .game-card a:hover {
+      background: #15803d;
+    }
+
+    /* Footer */
+    footer {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>🎮 Menu Game</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="kelas.html">Kelas</a>
+      <a href="hame.html">Game</a>
+    </nav>
+  </header>
+
+  <!-- Header -->
+  <section class="header">
+    <h2>Pilih Game</h2>
+    <p>Silakan main game yang tersedia</p>
+  </section>
+
+  <!-- Game Cards -->
+  <section class="games">
+
+    <div class="game-card">
+      <h3>🐦 Flappy Bird</h3>
+      <p>Hindari pipa dan raih skor setinggi mungkin.</p>
+      <a href="flappy.html">Mainkan</a>
+    </div>
+     
+     <div class="game-card">
+      <h3>🐍 Snake</h3>
+      <p>Kendalikan ular dan kumpulkan makanan.</p>
+      <a href="snake.html">Mainkan</a>
+    </div>
+    <div class="game-card">
+      <h3>🏃‍♂️ Run</h3>
+      <p>lompat dan raih score tertinggi</p>
+      <a href="runner.html">lest go</a>
+    </div>
+    <div class="game-card">
+      <h3>➕  pertambahan kilat
+      </h3>
+      <p>Hitung secepat yang kamu bisa</p>
+      <a href="math-speed.html">Siap pusing</a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Web Kelas & Game</p>
+  </footer>
+
+</body>
+</html>
